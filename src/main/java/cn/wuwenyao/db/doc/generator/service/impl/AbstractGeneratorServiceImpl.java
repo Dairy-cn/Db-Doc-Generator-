@@ -23,6 +23,11 @@ public abstract class AbstractGeneratorServiceImpl implements GeneratorService {
 
     protected GeneratorConfig generatorConfig;
 
+    /**
+     * windows系统名称前缀
+     */
+    private static final String SYSTEM_WINDOWS_PREFIX = "win";
+
 
     @Override
     public void generate() throws Exception {
@@ -36,7 +41,7 @@ public abstract class AbstractGeneratorServiceImpl implements GeneratorService {
     private void openDir() throws IOException {
         // 弹出目标文件夹
         String os = System.getProperty("os.name");
-        if (os.toLowerCase().startsWith("win")) {
+        if (os.toLowerCase().startsWith(SYSTEM_WINDOWS_PREFIX)) {
             Runtime.getRuntime().exec("explorer " + generatorConfig.getTargetFileDir());
         }
 
