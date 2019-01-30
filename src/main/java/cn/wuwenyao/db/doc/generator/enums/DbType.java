@@ -1,6 +1,7 @@
 package cn.wuwenyao.db.doc.generator.enums;
 
-import cn.wuwenyao.db.doc.generator.dao.impl.MysqlDbInfoDao;
+
+import cn.wuwenyao.db.doc.generator.dao.impl.dbinfo.mysql.MysqlDbInfoDao;
 
 /***
  * 数据库类型
