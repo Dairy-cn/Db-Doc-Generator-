@@ -22,7 +22,7 @@ public class GeneratorConfig {
     /***
      * 生成文件类型
      */
-    private TargetFileType targetFileType = TargetFileType.WORD;
+    private TargetFileType targetFileType = TargetFileType.EXCEL;
 
     /***
      * 生成文件目录
